@@ -7,12 +7,27 @@
  * This is the javascript file for supporting the Banana Republic site.
  */
  
-document.addEventListener(`DOMContentLoaded`, e => {       
+document.addEventListener(`DOMContentLoaded`, e => { 
+    
+    // Panel display
     document.getElementById(`main-link`).addEventListener(`click`, e =>{ 
         e.preventDefault();       
         displayPanel(); 
     });
+    document.getElementById(`para-link`).addEventListener(`click`, e =>{ 
+        e.preventDefault(); 
+    });
 
+    // Reset radio buttons
+    document.getElementById(`btn-reset`).addEventListener(`click`, e =>{ 
+        switchRadionSelected(`imgenmale`, `mars-symbol.svg`, false);
+        switchRadionSelected(`imgenfemale`, `venus-symbol.svg`, false);       
+        switchRadionSelected(`imgmemclassic`, `card.svg`, false);
+        switchRadionSelected(`imgmemsilver`, `card.svg`, false); 
+        switchRadionSelected(`imgmemgold`, `card.svg`, false); 
+    });
+
+    // Radio buttons events
     document.getElementById(`genmale`).addEventListener(`click`, e =>{ 
         e.preventDefault();
        if ( document.getElementById('genmale').checked) {
@@ -57,6 +72,7 @@ document.addEventListener(`DOMContentLoaded`, e => {
     });
   }, false);
 
+// Switches between the two right panels
 displayPanel = () => {   
     let hiddenPanel = document.getElementById(`column-right`);
     let hiddenPanel2 = document.getElementById(`column-right-p2`); 
@@ -86,6 +102,7 @@ displayPanel = () => {
     }
 }
 
+// Click event for radio buttons
 switchRadionSelected = (selectedId, image, selected) => {
     let radioSelected = document.getElementById(selectedId);
     if (radioSelected.classList.contains(`radio-custom`) && selected) {

@@ -17,7 +17,6 @@
   margin: 30px;
 }
 
-
 /*
  * Base structure
  */
@@ -62,13 +61,11 @@ input[class=cancel] {
   padding: 10px;
   background-color: #FFD500;
 }
-/* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
   .column-left {
     width: 100%;
   }
 }
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column-left {
     width: 100%;
@@ -85,7 +82,6 @@ input[class=cancel] {
     width: 100%;
   }
 }
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column-right {
     width: 100%;
@@ -103,7 +99,6 @@ input[class=cancel] {
     width: 100%;
   }
 }
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column-right-p2 {
     width: 100%;
@@ -120,13 +115,32 @@ input[class=cancel] {
   margin-left: auto;
   margin-bottom: auto;
   margin-top: auto;
-  width: 180px;
-  padding: 80px 0px 80px 0px;
+  width: 40%;
+  padding: 40px 0px 40px 0px;
 
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  font-weight: bold;
+  color: #000;
 }
 h1 p {
 margin-bottom: auto;
 margin-top: auto;
+}
+.h1-left{
+  margin-left: 3rem;
+}
+.p-center, .h1-center {
+  text-align: center;
+}
+.p-pad-2 {
+   padding: 2rem;
+}
+.p-pad-3 {
+  padding: 3rem;
 }
 .arrow {
   display: block;
@@ -246,11 +260,37 @@ span {
   width: 40px;
   padding: 10px ;
 }
-
 .roundborder {
   width: 100%;
   height: 80%;
   color: #555;
   border: 1px solid #ccc;
   border-radius: 25px;
+}
+.w3-left {
+  float: left!important;
+}
+.w3-animate-left {
+  position: relative;
+  animation: animateleft 0.2s;
+  animation-duration: 0.2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: animateleft;
+}
+@media screen and (max-width: 992px) {
+  .w3-animate-left {
+    animation: animatetop 0.2s;
+    animation-name: animatetop;
+  }
+}
+@media screen and (max-width: 600px) {
+  .w3-animate-left {
+    animation: animatetop 0.2s;
+    animation-name: animatetop;
+  }
 }
