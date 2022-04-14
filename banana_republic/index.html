@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="English">
+<html>
 	<title>Banana Republic</title>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,9 @@
 		<link rel="stylesheet" href="assets/css/custom/custom.css">
 
 	<!-- Vendors Scripts -->
-	<script src="/assets/js/vendors/bootstrap.min.js"></script>
+		<!-- <script type="text/javascript" src="assets/js/vendors/bootstrap.min.js"></script> -->
+	<!-- Custom Scripts -->
+		<script type="text/javascript" src="assets/js/custom/main.js"></script>
 	</head>
 	<body class="d-flex bg-dark">		
 		<div class="container cover-container">			
@@ -18,20 +20,20 @@
 				<!-- <div Left side panel -->
 				<div class="col-lg-4 col-md-12 column-left">			
 					<img src="assets/images/face.svg" alt="profile" class="profile">
-					<h1 style="text-align: center;">Front-end challenge!</h1>
-					<p style="text-align: center; margin: 25px;">
+					<h1>Front-end challenge!</h1>
+					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem.
 					</p>
 					
 					<div class="links">						
-						<a href="">
-							<img src="assets/images/arrow.svg" alt="arrow" class="arrow" style="background-color: grey;">
+						<a class="link-button" href="" id="main-link">
+							<img id="img-main-link" src="assets/images/arrow.svg" alt="arrow next-link" class="arrow">
 						</a> 
 					</div>
 				</div>
 				
 				<!-- Right Side panel -->
-				<div class="col-lg-8 col-md-12 column-right">
+				<div class="col-lg-8 col-md-12 column-right" id="column-right">
 					<div class="container">
 						<form action="" class="form-horizontal">
 							<div class="row mb-3">
@@ -45,12 +47,12 @@
 								<div class="col-sm-9">
 									<div class="row">
 										<div class="form-check col-sm-4">
-											<input class="form-check-input radio-custom-hidden" type="radio" name="gridRadios" id="genmale" value="male" checked>
-											<label class="form-check-label label_item" for="genmale"><img src="assets/images/mars-symbol.svg" class="qwerty"> Male</label>
+											<input class="form-check-input radio-custom-hidden" type="radio" name="gender" id="genmale" value="male" checked>
+											<label class="form-check-label label_item" for="genmale"><img src="assets/images/mars-symbol.svg" class="radio-custom" id="imgenmale"> Male</label>
 										</div>
 										<div class="form-check col-sm-4">
-											<input class="form-check-input radio-custom-hidden" type="radio" name="gridRadios" id="genfemale" value="female">
-											<label class="form-check-label label_item" for="genfemale"><img src="assets/images/venus-symbol.svg" class="qwerty"> Female</label>
+											<input class="form-check-input radio-custom-hidden" type="radio" name="gender" id="genfemale" value="female">
+											<label class="form-check-label label_item" for="genfemale"><img src="assets/images/venus-symbol.svg" class="radio-custom" id="imgenfemale"> Female</label>
 										</div>
 									</div>									
 								</div>
@@ -85,15 +87,15 @@
 								<div class="row">
 									<div class="form-check col-sm-4">
 										<input class="form-check-input radio-custom-hidden" type="radio" name="membership" id="memclassic" value="classic" checked>
-										<label class="form-check-label label_item" for="memclassic"><img src="assets/images/card.svg" class="qwerty"> Classic</label>
+										<label class="form-check-label label_item" for="memclassic"><img src="assets/images/card.svg" class="radio-custom" id="imgmemclassic"> Classic</label>
 									</div>
 									<div class="form-check col-sm-4">
 										<input class="form-check-input radio-custom-hidden" type="radio" name="membership" id="memsilver" value="silver">
-										<label class="form-check-label label_item" for="memsilver"><img src="assets/images/card.svg" class="qwerty"> Silver</label>
+										<label class="form-check-label label_item" for="memsilver"><img src="assets/images/card.svg" class="radio-custom" id="imgmemsilver"> Silver</label>
 									</div>
 									<div class="form-check col-sm-4 disabled">
 										<input class="form-check-input radio-custom-hidden" type="radio" name="membership" id="memgold" value="gold">
-										<label class="form-check-label label_item" for="memgold"><img src="assets/images/card.svg" class="qwerty"> Gold</label>
+										<label class="form-check-label label_item" for="memgold"><img src="assets/images/card.svg" class="radio-custom" id="imgmemgold"> Gold</label>
 									</div>
 								</div>
 							</div>
@@ -108,9 +110,9 @@
 					</div>
 				</div>
 				<!-- The second Right Panel -->
-				<div class="col-lg-8 col-md-12 column-right-p2 hidden">
-					<h1 style="text-align: center;">My world today</h1>
-					<p style="text-align: center; margin: 30px;">
+				<div class="col-lg-8 col-md-12 column-right-p2 hidden" id="column-right-p2">
+					<h1>My world today</h1>
+					<p class="mg-30">
 						Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. <a href="">View all days</a> Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
 				</div>

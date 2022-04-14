@@ -138,12 +138,76 @@ margin-top: auto;
   width: 50px;
   border-radius: 50% ;
   padding: 12px ;	
+  background-color: #41464b
 }
-/* input {
-
-float: right;
-margin-right: 115px;
-} */
+@media screen and (max-width: 992px) {
+  .arrow {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@media screen and (max-width: 600px) {
+  .arrow {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+.next-link {
+  -webkit-transform:rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+@media screen and (max-width: 992px) {
+  .next-link {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@media screen and (max-width: 600px) {
+  .next-link {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+.prev-link {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 992px) {
+  .prev-link {
+    -webkit-transform:rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+@media screen and (max-width: 600px) {
+  .prev-link {
+    -webkit-transform:rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
 span {
   float: right;
 }
@@ -166,14 +230,23 @@ span {
 .radio_item1:checked + label {
   opacity: 1;
 }
-.qwerty {
-  background-color: lightgrey;
+.radio-custom {
+  background-color: rgba(242, 243, 237, 0.966);
   border-radius: 50%;
-  border-color: grey;
+  border-color: rgba(201, 197, 197, 0.651);
   height: 40px;
   width: 40px;
   padding: 10px ;
 }
+.radio-custom-selected {
+  background-color: #41464b;
+  border-radius: 50%;
+  border-color: rgba(201, 197, 197, 0.651);
+  height: 40px;
+  width: 40px;
+  padding: 10px ;
+}
+
 .roundborder {
   width: 100%;
   height: 80%;
